@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies_page</title>
+    <script type="text/javascript" src="./assets/js/jQuery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+</style>
+<body>
+    <h1>
+        <picture>
+            <source media="(min-width: 650px)" srcset="./assets/img/Lady'sbanner_2020.png" class="topimg">
+                <img src="./assets/img/Lady'sbanner_smp_2020.png" alt="topimg">
+            </picture>
+        </h1>
+        <div class="categories">
+            <ruby>
+                <p class="rubi">バッグ</p>
+                <rb class="title_name">Bag</rb>
+            </ruby>
+            <div class="description">
+                <p class="des">
+                    普段持ちのデイリーバッグ、<br>
+                    おでかけ用のバッグ、<br>
+                    <br>
+                    いつでもおしゃれに持ち歩きたい
+                </p>
+            </div>
+        </div>
+        <div class="brand_name">
+            <ruby>
+                <p class="rubi">ルイ・ヴィトン</p>
+                <rb class="name" id="lv">LOUIS VUITTON</rb>
+            </ruby>
+        </div>
+        <div class="section_img">
+            <ul class="fadeinslide">
+                <li class="fadeInUp"><img src="./assets/img/lv_girl_1.png" alt="人物画像"></li>
+                <li class="fadeInUpright">
+                    <p class="brandphrase">
+                        <span>男</span> 
+                        <span>女</span> 
+                        <span>問</span> 
+                        <span>わ</span> 
+                        <span>ず</span> 
+                        <span>愛</span> 
+                        <span>さ</span>
+                        <span>れ</span>
+                        <span>る</span>
+                        <br>
+                        <span>ル</span>
+                        <span>イ</span>
+                        <span>・</span>
+                        <span>ヴ</span>
+                        <span>ィ</span>
+                        <span>ト</span>
+                        <span>ン</span>
+                    </p>
+                    <img src="./assets/img/lv_left.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="mainitem">
+            <p class="rubi">メインアイテム</p>
+            <p class="mainitem_name">Main Items</p>
+        </div>
+
+    <div class="items">
+        <ul class="items_pic">
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/monogram.png">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        モノグラム
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/damie.png">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ダミエ
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/epi.png">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        エピ
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/verni.png">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ヴェルニ
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="item_all_button_box">
+        <a href="" class="item_all_button_button">
+            <p class="seeitem">
+                すべてのアイテムをみる
+            </p>
+        </a>
+    </div>
+
+    <div class="brand_name">
+        <ruby>
+            <p class="rubi">シャネル</p>
+            <rb class="name" id="ch">CHANEL</rb>
+        </ruby>
+    </div>
+    <div class="section_img" id="ch_sec">
+        <ul class="fadeinslide">
+          <li class="fadeInUp">
+              <img src="./assets/img/chanel_girl.png" alt="人物画像"></li>
+              <li class="fadeInUpright">
+                <p class="brandphrase">
+                    <span>歴</span> 
+                    <span>史</span> 
+                    <span>を</span> 
+                    <span>感</span> 
+                    <span>じ</span> 
+                    <span>る</span> 
+                    <br>
+                    <span>シ</span>
+                    <span>ャ</span>
+                    <span>ネ</span>
+                    <span>ル</span>
+                </p>  
+                  <img src="./assets/img/chanel_right.png" alt=""></li>  
+        </ul>
+    </div>
+    <div class="mainitem">
+            <p class="rubi">メインアイテム</p>
+            <p class="mainitem_name">Main Items</p>
+    </div>
+
+    <div class="items">
+        <ul class="items_pic">
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/frapchain.png" alt="フラップチェーン">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        フラップチェーン
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/kanbonrain.png"　alt="カンボンライン">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        カンボンライン
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/frapchain.png"　alt="マトラッセ">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        マトラッセ
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/newtravel.png" alt="ニュートラベル">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ニュートラベル
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/vstech.png"　alt="vステッチ">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        Vステッチ
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/Deauville.png"　alt="ドーヴィル">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ドーヴィル
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="item_all_button_box">
+        <a href="" class="item_all_button_button">
+            <p class="seeitem">
+                すべてのアイテムをみる
+            </p>
+        </a>
+    </div>
+
+    <div class="brand_name">
+        <ruby>
+            <p class="rubi">エルメス</p>
+            <rb class="name" id="her">HERMES</rb>
+        </ruby>
+    </div>
+    <div class="section_img" id="hel_sec">
+        <ul class="fadeinslide">
+          <li class="fadeInUp"><img src="./assets/img/helmes_girl.png" alt="人物画像"></li>
+          <li class="fadeInUpright">
+            <p class="brandphrase">
+                <span>素</span> 
+                <span>材</span> 
+                <span>や</span> 
+                <span>ク</span> 
+                <span>オ</span> 
+                <span>リ</span>
+                <span>テ</span>
+                <span>ィ</span>
+                <span>の</span>
+                <span>高</span>
+                <span>い</span>
+                <br>
+                <span>エ</span>
+                <span>ル</span>
+                <span>メ</span>
+                <span>ス</span>
+            </p>
+              <img src="./assets/img/right_helmes.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="mainitem">
+            <p class="rubi">メインアイテム</p>
+            <p class="mainitem_name">Main Items</p>
+    </div>
+
+    <div class="items">
+        <ul class="items_pic">
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/gardenparty.png" alt="ガーデンパーティー">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ガーデンパーティー
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/Eileen.png" alt="エールライン">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        エールライン
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/picotanrock.png" alt="ピコタンロック">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ピコタンロック
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/evlyn.png"　alt="エブリン">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        エブリン
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="item_all_button_box">
+        <a href="" class="item_all_button_button">
+            <p class="seeitem">
+                すべてのアイテムをみる
+            </p>
+        </a>
+    </div>
+
+    <div class="brand_name">
+        <ruby>
+            <p class="rubi">グッチ</p>
+            <rb class="name" id="gu">GUCCI</rb>
+        </ruby>
+    </div>
+    <div class="section_img">
+        <ul class="fadeinslide">
+          <li class="fadeInUp"><img src="./assets/img/gucci_girl.png" alt="人物画像"></li>
+          <li class="fadeInUpright">
+            <p class="brandphrase">
+                <span>ト</span> 
+                <span>レ</span> 
+                <span>ン</span> 
+                <span>デ</span> 
+                <span>ィ</span> 
+                <span>ー</span>
+                <span>な</span>
+                <span>デ</span>
+                <span>ザ</span>
+                <span>イ</span>
+                <span>ン</span>
+                <span>が</span>
+                <span>魅</span>
+                <span>力</span>
+                <span>的</span>
+                <span>な</span>
+                <span>グ</span>
+                <span>ッ</span>
+                <span>チ</span>
+            </p>  
+            <img src="./assets/img/gucci_right.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="mainitem">
+            <p class="rubi">メインアイテム</p>
+            <p class="mainitem_name">Main Items</p>
+    </div>
+
+    <div class="items">
+        <ul class="items_pic">
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/ofidhia.png" alt="オフィディア">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        オフィディア
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/marmont.png" alt="マーモント">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        マーモント
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/bamboo.png"　alt="バンブー">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        バンブー
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/soho.png"　alt="ソーホー">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        ソーホー
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="image">
+                    <a href="">
+                        <img src="./assets/img/ggcampas.png"　alt="ggキャンパス">
+                    </a>
+                </p>
+                <p class="name">
+                    <a href=>
+                        GGキャンパス
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="item_all_button_box" id="last_button">
+        <a href="" class="item_all_button_button">
+            <p class="seeitem">
+                すべてのアイテムをみる
+            </p>
+        </a>
+    </div>
+    <div class="categories" id="second_categories">
+        <ruby>
+            <p class="rubi">財布</p>
+            <rb class="title_name">Wallet</rb>
+        </ruby>
+        <div class="description">
+            <p class="des">
+                オンでもオフでも、<br>
+                毎日使うお財布<br>
+            </p>
+            <div class="brand_name">
+                <ruby>
+                    <p class="rubi">ルイ・ヴィトン</p>
+                    <rb class="name" id="lv">LOUIS VUITTON</rb>
+                </ruby>
+            </div>
+        </div>
+        <div class="wallet_items">
+            <ul class="wallet_pic">
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/lv_nagazaifu.png" alt="ヴィトン長財布">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            長財布
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/lv_futatuori.png" alt="ヴィトン二つ折り">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            二つ折り
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/lv_coincase.png"　alt="ヴィトンコインケース">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            コインケース
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="brand_name">
+            <ruby>
+                <p class="rubi">シャネル</p>
+                <rb class="name" id="ch">CHANEL</rb>
+            </ruby>
+        </div>
+        <div class="wallet_items">
+            <ul class="wallet_pic">
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/chanel_nagazaifu.png" alt="シャネル長財布">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            長財布
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/chanel_futatuori.png" alt="シャネル二つ折り">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            二つ折り
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/chanel_coincase.png"　alt="シャネルコインケース">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            コインケース
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="brand_name">
+            <ruby>
+                <p class="rubi">エルメス</p>
+                <rb class="name" id="her">HERMES</rb>
+            </ruby>
+        </div>
+        <div class="wallet_items">
+            <ul class="wallet_pic">
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/helme_nagazaifu.png" alt="エルメス長財布">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            長財布
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/helmse_futatuori.png" alt="エルメス二つ折り">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            二つ折り
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/helmes_coincase.png"　alt="エルメスコインケース">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            コインケース
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="brand_name">
+            <ruby>
+                <p class="rubi">グッチ</p>
+                <rb class="name" id="gu">GUCCI</rb>
+            </ruby>
+        </div>
+        <div class="wallet_items">
+            <ul class="wallet_pic">
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/gucci_nagazaifu.png" alt="グッチ長財布">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            長財布
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/gucci_futatuori.png" alt="グッチ二つ折り">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            二つ折り
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p class="image">
+                        <a>
+                            <img src ="./assets/img/gucci_coincase.png"　alt="グッチコインケース">
+                        </a>
+                    </p>
+                    <p class="name">
+                        <a href=>
+                            コインケース
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <footer>
+        <iframe src="https://www.rakuten.ne.jp/gold/brandbrand/footer_2019/footer_new.html"></iframe>
+       <iframe src="https://www.rakuten.ne.jp/gold/brandbrand/footer_2019/smp/footer_2019smp_.html"></iframe> 
+   </footer> -->
+</body>
+</html>
