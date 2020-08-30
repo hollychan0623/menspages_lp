@@ -200,7 +200,7 @@ img{
 
 .mainitem {
     text-align: center;
-    margin:0 20% 15%;
+    /* margin:0 0 15%; */
 }
 
 .mainitem_name {
