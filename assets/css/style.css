@@ -275,6 +275,7 @@ img{
     font-weight: bold;
     letter-spacing: 1.2px;
     transition: all .3s;
+    width: 500px;
 }
 
 .item_all_button_box:hover {
