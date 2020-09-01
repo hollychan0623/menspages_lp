@@ -188,6 +188,7 @@ img{
   transition: 1.5s;
   margin-left: -4.5%;
   margin-top: 80px;
+  max-width:500px;
   
 }
 
@@ -196,6 +197,7 @@ img{
   transform: translateX(100px);
   transition: 1.5s;
   margin-right: -4.5%;
+  max-width:600px;
 }
 
 .mainitem {
@@ -317,6 +319,19 @@ img{
   margin-bottom:20%;
 }
 
+.other_pic{
+  max-width: 1500px;
+  display:flex;
+  flex-wrap:wrap;
+  margin: 0 auto;
+}
+
+.other_pic li {
+  width: calc(100% / 2 - 50px); 
+  padding:5%; 
+  margin:0 auto; 
+}
+
 .wallet_pic{
   max-width: 1500px;
   display:flex;
@@ -326,20 +341,13 @@ img{
 
 .wallet_pic li {
   width: calc(100% / 3 - 50px); 
-  padding:2%; 
+  /* padding:2%;  */
   margin:0 auto; 
+  justify-content: flex-start;
 }
-
 .categories {
   margin-bottom:20%;
 }
-
-/* iframe {
-  width:1500px;
-  height:2200px;
-  margin:0 20%;
-} */
-
 
 
 
@@ -394,5 +402,13 @@ h1 {
   }
   .seeitem::before {
    display:none;
+  }
+    /* iframePC版フッター非表示 */
+    #pc_footerframe {
+      display:none;
+  }
+  /* iframesmp版フッター表示 */
+  #smp_footerframe {
+      display:block;
   }
 }
