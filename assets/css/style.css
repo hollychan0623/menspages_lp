@@ -4,6 +4,147 @@ body {
 }
 
 h1 {
+  text-align: center;
+  padding-top: 60px;
+}
+/* ハンバーガーメニュー */
+#nav-toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 32px;
+  cursor: pointer;
+}
+#nav-toggle > div {
+  position: relative;
+  width: 36px;
+}
+#nav-toggle span {
+  width: 100%;
+  height: 1px;
+  left: 0;
+  display: block;
+  background: #333;
+  position: absolute;
+  transition: transform 0.6s ease-in-out, top 0.5s ease;
+}
+#nav-toggle span:nth-child(1) {
+  top: 0;
+}
+#nav-toggle span:nth-child(2) {
+  top: 14px;
+}
+#nav-toggle span:nth-child(3) {
+  top: 28px;
+}
+#nav-toggle:hover span:nth-child(1) {
+  top: 4px;
+}
+#nav-toggle:hover span:nth-child(3) {
+  top: 23px;
+}
+
+.open #nav-toggle span {
+  background: #fff;
+}
+.open #nav-toggle span:nth-child(1) {
+  top: 15px;
+  transform: rotate(45deg);
+}
+.open #nav-toggle span:nth-child(2) {
+  top: 15px;
+  width: 0;
+  left: 50%;
+}
+.open #nav-toggle span:nth-child(3) {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+/* z-index */
+#nav-toggle {
+  z-index: 1000;
+}
+
+#container {
+  z-index: 900;
+}
+
+#gloval-nav {
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  text-align: center;
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  opacity: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  width:30%;
+}
+
+#gloval-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.6s ease;
+}
+#gloval-nav a:hover {
+  color: #666;
+}
+#gloval-nav ul {
+  list-style: none;
+}
+#gloval-nav ul li {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: transform 0.6s ease, opacity 0.2s ease;
+}
+#gloval-nav ul li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+#gloval-nav ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+#gloval-nav ul li:nth-child(4) {
+  transition-delay: 0.45s;
+}
+#gloval-nav ul li:nth-child(5) {
+  transition-delay: 0.6s;
+}
+#gloval-nav ul li:nth-child(6) {
+  transition-delay: 0.75s;
+}
+#gloval-nav ul li:nth-child(7) {
+  transition-delay: 0.9s;
+}
+
+/* open */
+.open {
+  overflow: hidden;
+}
+.open #gloval-nav {
+  visibility: visible;
+  opacity: 1;
+}
+.open #gloval-nav li {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease, opacity 0.9s ease;
+}
+
+/* ここまで */
+
+h1 {
   margin:0 auto 30px;
   max-width: 1200px;
 }
@@ -188,6 +329,7 @@ img{
   transition: 1.5s;
   margin-left: -4.5%;
   margin-top: 80px;
+  max-width:500px;
   
 }
 
@@ -196,11 +338,12 @@ img{
   transform: translateX(100px);
   transition: 1.5s;
   margin-right: -4.5%;
+  max-width:600px;
 }
 
 .mainitem {
     text-align: center;
-    margin:0 20% 15%;
+    /* margin:0 0 15%; */
 }
 
 .mainitem_name {
@@ -231,25 +374,25 @@ img{
 }
 
 .items_pic{
-    max-width: 1020px;
+    max-width: 1500px;
     display:flex;
     flex-wrap:wrap;
     margin: 0 auto;
 }
 
-.items_pic li {
-    width: calc(100% / 2 - 24px); 
+/* .items_pic li {
+    width: calc(100% / 3 - 50px); 
     padding:5% 0;
    
-}
+} */
 
-.items_pic li:nth-child(odd) {
-    padding-right:30px;
-}
+/* .items_pic li:nth-child(odd) {
+    padding-right:40px;
+} */
 
-.items_pic li:nth-child(even) {
+/* .items_pic li:nth-child(even) {
     padding-left:30px;
-}
+} */
 
 .name {
     text-align: center;
@@ -317,6 +460,19 @@ img{
   margin-bottom:20%;
 }
 
+.other_pic{
+  max-width: 1500px;
+  display:flex;
+  flex-wrap:wrap;
+  margin: 0 auto;
+}
+
+.other_pic li {
+  width: calc(100% / 2 - 50px); 
+  padding:5%; 
+  margin:0 auto; 
+}
+
 .wallet_pic{
   max-width: 1500px;
   display:flex;
@@ -324,22 +480,15 @@ img{
   margin: 0 auto;
 }
 
-.wallet_pic li {
+.items_pic li,.wallet_pic li {
   width: calc(100% / 3 - 50px); 
-  padding:2%; 
+  /* padding:2%;  */
   margin:0 auto; 
+  justify-content: flex-start;
 }
-
 .categories {
   margin-bottom:20%;
 }
-
-/* iframe {
-  width:1500px;
-  height:2200px;
-  margin:0 20%;
-} */
-
 
 
 
@@ -385,14 +534,19 @@ h1 {
   .name {
     font-size:1em;
   }
-  .items_pic{
-    margin-left:10%;
-  }
   .item_all_button_box, .item_all_button_button{
     font-size:1em;
     padding:0 10px;
   }
   .seeitem::before {
    display:none;
+  }
+    /* iframePC版フッター非表示 */
+    #pc_footerframe {
+      display:none;
+  }
+  /* iframesmp版フッター表示 */
+  #smp_footerframe {
+      display:block;
   }
 }
