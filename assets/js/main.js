@@ -106,7 +106,7 @@ $(function() {
 (function($) {
   $(function () {
     $('#nav-toggle').on('click', function() {
-      $('body').toggleClass('open');
+      $('.wrap').toggleClass('open');
     });
   });
 })(jQuery);

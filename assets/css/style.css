@@ -374,25 +374,25 @@ img{
 }
 
 .items_pic{
-    max-width: 1020px;
+    max-width: 1500px;
     display:flex;
     flex-wrap:wrap;
     margin: 0 auto;
 }
 
-.items_pic li {
-    width: calc(100% / 2 - 24px); 
+/* .items_pic li {
+    width: calc(100% / 3 - 50px); 
     padding:5% 0;
    
-}
+} */
 
-.items_pic li:nth-child(odd) {
-    padding-right:30px;
-}
+/* .items_pic li:nth-child(odd) {
+    padding-right:40px;
+} */
 
-.items_pic li:nth-child(even) {
+/* .items_pic li:nth-child(even) {
     padding-left:30px;
-}
+} */
 
 .name {
     text-align: center;
@@ -416,7 +416,6 @@ img{
     font-weight: bold;
     letter-spacing: 1.2px;
     transition: all .3s;
-    width: 500px;
 }
 
 .item_all_button_box:hover {
@@ -481,7 +480,7 @@ img{
   margin: 0 auto;
 }
 
-.wallet_pic li {
+.items_pic li,.wallet_pic li {
   width: calc(100% / 3 - 50px); 
   /* padding:2%;  */
   margin:0 auto; 
@@ -534,9 +533,6 @@ h1 {
   
   .name {
     font-size:1em;
-  }
-  .items_pic{
-    margin-left:10%;
   }
   .item_all_button_box, .item_all_button_button{
     font-size:1em;
