@@ -282,7 +282,7 @@ span {/*各テキストにanimationを設定*/
     font-weight: bold;
 }
 
-#gu {
+#gu,#main {
     font-family: 'Marcellus', serif;
     font-size: 5.5em;
 }
@@ -461,15 +461,15 @@ img{
 }
 
 .other_pic{
-  max-width: 1500px;
+  max-width: 1200px;
   display:flex;
   flex-wrap:wrap;
   margin: 0 auto;
 }
 
 .other_pic li {
-  width: calc(100% / 2 - 50px); 
-  padding:5%; 
+  width: calc(100% / 2 - 100px); 
+  padding:2%; 
   margin:0 auto; 
 }
 
@@ -480,14 +480,21 @@ img{
   margin: 0 auto;
 }
 
-.items_pic li,.wallet_pic li {
-  width: calc(100% / 3 - 50px); 
+
+.wallet_pic li {
+  width: calc(100% / 3 - 100px); 
+
   /* padding:2%;  */
   margin:0 auto; 
   justify-content: flex-start;
 }
 .categories {
   margin-bottom:20%;
+}
+
+ /* iframesmp版フッター表示 */
+ #smp_footerframe {
+  display:none;
 }
 
 
