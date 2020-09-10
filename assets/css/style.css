@@ -3,6 +3,11 @@ body {
     margin-bottom:10%;
 }
 
+.wrap {
+  max-width:1200px;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   padding-top: 60px;
@@ -374,15 +379,14 @@ img{
 }
 
 .items_pic{
-    max-width: 2000px;
     display:flex;
     flex-wrap:wrap;
     margin: 0 auto;
 }
 
-.items_pic li {
+.items_pic li,.wallet_pic li {
     width: calc(100% / 3); 
-    padding:0 2%;
+    padding:0 3%;
    
 }
 
@@ -453,15 +457,14 @@ img{
 }
 
 .other_pic{
-  max-width: 1200px;
   display:flex;
   flex-wrap:wrap;
   margin: 0 auto;
 }
 
 .other_pic li {
-  width: calc(100% / 2 - 80px); 
-  padding:2%; 
+  width: calc(100% / 2); 
+  padding:2% 8%; 
   margin:0 auto; 
 }
 
