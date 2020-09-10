@@ -380,19 +380,11 @@ img{
     margin: 0 auto;
 }
 
-/* .items_pic li {
+.items_pic li {
     width: calc(100% / 3 - 50px); 
-    padding:5% 0;
+    padding:0 2%;
    
-} */
-
-/* .items_pic li:nth-child(odd) {
-    padding-right:40px;
-} */
-
-/* .items_pic li:nth-child(even) {
-    padding-left:30px;
-} */
+}
 
 .name {
     text-align: center;
