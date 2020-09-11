@@ -1,6 +1,11 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom:10%;
+}
+
+.wrap {
+  max-width:1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -86,7 +91,7 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  opacity: 0;
+  opacity: 0.8;
   transition: opacity 0.6s ease, visibility 0.6s ease;
   width:30%;
 }
@@ -134,7 +139,7 @@ h1 {
 }
 .open #gloval-nav {
   visibility: visible;
-  opacity: 1;
+  /* opacity: 1; */
 }
 .open #gloval-nav li {
   opacity: 1;
@@ -299,7 +304,6 @@ span {/*各テキストにanimationを設定*/
   margin: 0 auto;
   padding: 50px 25px;
   background: linear-gradient(180deg, #FFD6D6 0%, #FFD6D6 70%, #fff 50%, #fff 100%);
-  margin-bottom:10%;
 }
 
 #ch_sec {
@@ -374,25 +378,17 @@ img{
 }
 
 .items_pic{
-    max-width: 1500px;
     display:flex;
     flex-wrap:wrap;
     margin: 0 auto;
 }
 
-/* .items_pic li {
-    width: calc(100% / 3 - 50px); 
-    padding:5% 0;
-   
-} */
-
-/* .items_pic li:nth-child(odd) {
-    padding-right:40px;
-} */
-
-/* .items_pic li:nth-child(even) {
-    padding-left:30px;
-} */
+.items_pic li,.wallet_pic li {
+    width: calc(100% / 3);  
+    margin:0 auto; 
+    justify-content: flex-start;
+    padding:0% 2%;
+}
 
 .name {
     text-align: center;
@@ -402,7 +398,7 @@ img{
 }
 
 .item_all_button_box{
-    margin:5% auto 30%;
+    margin:20% auto;
     width:350px;
 }
 
@@ -461,15 +457,14 @@ img{
 }
 
 .other_pic{
-  max-width: 1200px;
   display:flex;
   flex-wrap:wrap;
   margin: 0 auto;
 }
 
 .other_pic li {
-  width: calc(100% / 2 - 100px); 
-  padding:2%; 
+  width: calc(100% / 2); 
+  padding:2% 8%; 
   margin:0 auto; 
 }
 
@@ -480,16 +475,46 @@ img{
   margin: 0 auto;
 }
 
-
-.wallet_pic li {
-  width: calc(100% / 3 - 100px); 
-
-  /* padding:2%;  */
-  margin:0 auto; 
-  justify-content: flex-start;
-}
 .categories {
   margin-bottom:20%;
+}
+
+.rubi_s {
+  font-size:.8em;
+}
+
+#p_s {
+  font-family: 'PT Serif', serif;
+  font-size: 1.8em;
+}
+
+#lv_s {
+  font-family: futura-pt, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#gu_s {
+  font-family: 'Marcellus', serif;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+#ca_s {
+  font-family: 'Damion', cursive;
+  font-size:1.8em;
+}
+
+#bo_s {
+  font-family: 'Marcellus', serif;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+#her_s {
+  font-family: 'Sanchez', serif;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
  /* iframesmp版フッター表示 */
@@ -513,7 +538,7 @@ h1 {
     font-size:1em;
   }
   
-  #lv,#ch,#her,#gu {
+  #lv,#ch,#her,#gu,#main {
     font-size:2.5em;
   }
   
@@ -548,6 +573,7 @@ h1 {
   .seeitem::before {
    display:none;
   }
+
     /* iframePC版フッター非表示 */
     #pc_footerframe {
       display:none;
