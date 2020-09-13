@@ -194,11 +194,6 @@ rt {
     width:80%;
 }
 
-.brandphrase {
-    font-size:2.5em;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 /*以下フェードイン表示の指定*/
 .fadein {
@@ -209,9 +204,9 @@ rt {
   100% {  opacity: 1;}
 }
 
-/*以下遅延の指定*/
-.txt01 {animation-delay: 1s;}
-.txt02 {animation-delay: 2s;}
+.phrase {
+  font-size: 3em;
+}
 
 #lv {
     font-family: futura-pt, sans-serif;
@@ -276,7 +271,7 @@ img{
   transform: translateX(-100px);
   transition: 1.5s;
   margin-left: -4.5%;
-  max-width:500px;
+  max-width:550px;
   
 }
 
@@ -471,7 +466,7 @@ img{
  }
  .scroll-target{
   text-align: center;
-  font-size: 2.5em;
+  font-size: em;
   font-family: 'Noto Serif JP', serif;
   margin-bottom: 20%;
   
@@ -496,8 +491,8 @@ h1 {
     font-size:2.5em;
   }
   
-  .brandphrase {
-    font-size:1em;
+  .phrase {
+    font-size:1.5em;
   }
   
   .fadeInUpright {
