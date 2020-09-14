@@ -90,17 +90,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 1.5em;
   opacity: 0.8;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width:30%;
+  width:20%;
 }
 
 #gloval-nav a {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 1px 0;
   transition: color 0.6s ease;
 }
 #gloval-nav a:hover {
@@ -131,6 +131,22 @@ h1 {
 }
 #gloval-nav ul li:nth-child(7) {
   transition-delay: 0.9s;
+}
+#gloval-nav ul li:nth-child(8) {
+  transition-delay: 1.00s;
+}
+#gloval-nav ul li:nth-child(9) {
+  transition-delay: 1.15s;
+}
+#gloval-nav ul li:nth-child(10) {
+  transition-delay: 1.45s;
+}
+#gloval-nav ul li:nth-child(11) {
+  transition-delay: 1.6s;
+}
+
+.menu {
+  margin-bottom:20%;
 }
 
 /* open */
@@ -176,7 +192,7 @@ rt {
 
 .des {
     margin-top:3%;
-    font-size:1.5em;
+    font-size:2em;
     text-align: center;
 }
 
@@ -281,6 +297,7 @@ img{
   transition: 1.5s;
   margin-right: -4.5%;
   max-width:600px;
+  margin-top: 5%;
 }
 
 .mainitem {
@@ -490,13 +507,21 @@ h1 {
   #lv,#ch,#her,#gu,#main {
     font-size:2.5em;
   }
-  
-  .phrase {
-    font-size:1.5em;
+
+  .section_img{
+    padding:0 25px;
   }
   
-  .fadeInUpright {
-    margin-top:0%;
+  .phrase {
+    font-size:1.2em;
+  }
+  
+  .scroll-target {
+    margin-top: 20%;
+  }
+  
+  .fadeInUp {
+    margin-top:20%;
   }
   
   li {
@@ -504,7 +529,7 @@ h1 {
   }
   
   .mainitem_name {
-    font-size:2.5em;
+    font-size:2em;
   }
   
   .mainitem {
