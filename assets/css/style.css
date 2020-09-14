@@ -499,6 +499,11 @@ h1 {
    .title_name {
     font-size:3em;
   }
+
+  #gloval-nav {
+    width:60%;
+    font-size:1em;
+  }
   
   .des {
     font-size:1em;
