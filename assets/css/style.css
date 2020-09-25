@@ -67,7 +67,7 @@ h1 {
 }
 
 nav {
-  padding-top: 500px;
+  padding-top: 300px;
 }
 
 /* z-index */
@@ -97,7 +97,7 @@ nav {
   font-size: 1.5em;
   opacity: 0.8;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width:40%;
+  width:20%;
   overflow: auto;
  -webkit-overflow-scrolling: touch;
 }
