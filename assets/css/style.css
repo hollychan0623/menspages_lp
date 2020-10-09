@@ -541,6 +541,13 @@ img{
   margin-bottom: 10%;
  }
 
+ #page-top {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  font-size: 85%;
+}
+
  #page-top a {
   background: #9CECFB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
@@ -591,7 +598,7 @@ h1 {
   }
   
   .phrase {
-    font-size:2em;
+    font-size:1.5em;
   }
   
   .scroll-target {
